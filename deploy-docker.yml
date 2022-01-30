@@ -11,5 +11,4 @@
         name: helloscript
         image: "orlym/hello_world:1"
         state: started
-        volumes:
-          - /data/test/
+        
