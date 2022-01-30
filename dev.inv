@@ -1,2 +1,3 @@
 [dev]
 34.220.100.158 ansible_user=root
+ansible_python_interpreter=/usr/bin/python3
