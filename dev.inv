@@ -1,2 +1,2 @@
 [dev]
-34.220.100.158 ansible_user=centos
+34.220.100.158 ansible_user=root
