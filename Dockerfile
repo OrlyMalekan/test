@@ -1,10 +1,8 @@
 FROM centos:7
 
 USER root
-VOLUME /data/test
+WORKDIR /data/test
 COPY hello_world.sh /data/test/
 RUN chmod -R 755 /data/test/hello_world.sh
-
-CMD ["/data/test/hello_world.sh"]
-
-USER root
+VOLUME ["/data/test/"]
+ENTRYPOINT ["sh","/data/test/hello_world.sh"]
