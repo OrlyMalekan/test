@@ -9,7 +9,7 @@
     - name: Start the container
       docker_container:
         name: helloscript
-        image: "orlym/hello_world{{BUILD_NUMBER}}"
+        image: "orlym/hello_world:1"
         state: started
         volumes:
           - /data/test/
