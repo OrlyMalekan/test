@@ -5,7 +5,7 @@
     - name: Start the container
       docker_container:
         name: helloscript
-        image: "orlym/hello_world:{{DOCKER_TAG}}"
+        image: "orlym/hello_world:{{BUILD_NUMBER}}"
         state: started
         volumes:
           - /data/test/
