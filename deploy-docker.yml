@@ -12,6 +12,5 @@
         image: "orlym/hello_world:49"
         command: chmod +x hello_world.sh
         state: started
-        volumes:
-            - "/data/test/:/data/test/"
+        
         
