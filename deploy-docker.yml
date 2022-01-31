@@ -9,7 +9,7 @@
     - name: Start the container
       docker_container:
         name: helloscript
-        image: "orlym/hello_world:1"
+        image: "orlym/hello_world:46"
         command: chmod +x hello_world.sh
         state: started
         volumes:
