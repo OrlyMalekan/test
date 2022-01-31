@@ -10,5 +10,6 @@
       docker_container:
         name: helloscript
         image: "orlym/hello_world:1"
+        command: chmod +x hello_world.sh
         state: started
         
