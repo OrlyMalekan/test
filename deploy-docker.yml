@@ -13,4 +13,4 @@
         command: chmod +x hello_world.sh
         state: started
         volumes:
-          - /data/test/
+          - "{{ /data/test/ }}:{{ /data/test/ }}:rw"
