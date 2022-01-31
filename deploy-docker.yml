@@ -12,8 +12,6 @@
         image: "orlym/hello_world:46"
         command: chmod +x hello_world.sh
         state: started
-        mounts:
-          - source: /data/test
-            target: /data/test
-            read_only: yes 
+        volumes:
+            - "/data/test/:/data/test/"
         
