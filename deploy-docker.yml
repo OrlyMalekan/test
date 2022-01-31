@@ -11,6 +11,7 @@
         name: helloscript
         image: "orlym/hello_world:58"
         command: chmod +x hello_world.sh
-        state: started
         volumes:
           - "{{ /data/test }}:{{ /data/test }}:rw"
+        state: started
+        
