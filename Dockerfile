@@ -3,6 +3,6 @@ FROM centos:7
 USER root
 WORKDIR /data/test
 COPY hello_world.sh /data/test/
-RUN chmod +x /data/test/hello_world.sh
-RUN '/data/test/hello_world.sh'
-ENTRYPOINT ["/bin/bash","-c","hello_world.sh"]
+RUN chmod -R 755 /data/test/hello_world.sh
+VOLUME ["/data/test/"]
+ENTRYPOINT ["sh","/data/test/hello_world.sh"]
