@@ -13,6 +13,5 @@
         command: chmod +x hello_world.sh
         state: started
         volumes:
-          - /data/test/
-        detach: True  
+          - /data/test/  
         
