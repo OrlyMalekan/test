@@ -4,5 +4,5 @@ USER root
 WORKDIR /data/test
 COPY hello_world.sh /data/test/
 RUN chmod +x /data/test/hello_world.sh
-RUN 'cd /data/test/; pwd'
+RUN 'cd /data/test/'
 ENTRYPOINT ["/bin/bash","-c","hello_world.sh"]
